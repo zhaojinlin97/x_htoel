@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script type="text/javascript">
+			var designWidth = 640,
+				rem2px = 100;
+			document.documentElement.style.fontSize =
+				((window.innerWidth / designWidth) * rem2px) + 'px';
+		</script>
+
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			.header {
+				width: 100%;
+				height: 1.8rem;
+				background: #fff;
+				text-align: center;
+				line-height: 1.8rem;
+				position: relative;
+			}
+			
+			.header h1 {
+				font-size: 0.3rem;
+				font-weight: bold;
+				color: #434a54;
+				float: none;
+			}
+			
+			.header img {
+				width: 0.3rem;
+				height: 0.3rem;
+				position: absolute;
+				left: 0.4rem;
+				top: 0.75rem;
+			}
+			
+			.main {
+				width: 100%;
+				height: 8rem;
+				background: #fff;
+				line-height: 0rem;
+				margin-top: 0.1rem;
+			}
+			
+			.ipt {
+				width: 100%;
+				height: 1rem;
+				background: #fff;
+				text-align: center;
+			}
+			
+			.ipt .user {
+				width: 4.7rem;
+				height: 1rem;
+				border: none;
+				text-align: center;
+				border-bottom: 1px solid #a8adaf;
+				color: #a8adaf;
+				font-weight: bold;
+				box-sizing: border-box;
+			}
+			
+			.btn {
+				width: 100%;
+				height: 0.9rem;
+				background: #fff;
+				margin-top: 0.7rem;
+				text-align: center;
+			}
+			
+			.btn button {
+				width: 4.7rem;
+				height: 0.9rem;
+				border: none;
+				font-weight: bold;
+				font-size: 0.3rem;
+				background: #7cb342;
+				border-radius: 3px;
+				color: #fff;
+			}
+			.hint{
+				width: 100%;
+				height: 1.8rem;
+				background: #fff;
+				text-align: center;
+				margin-top:0.3rem ;
+			}
+			.hint span{
+				font-size: 0.25rem;
+				line-height: 0.8rem;
+				display: block;
+			}
+			.or{
+				width: 100%;
+				height: 1rem;
+				border-bottom: 1px solid #90a4ae;
+				/*background: red;*/
+				text-align: center;
+				position: relative;
+				
+			}
+			.circle{
+				width: 0.75rem;
+				height: 0.75rem;
+				border-radius:50% ;
+				border: 1px solid #90a4ae;
+				background: #fff;
+				margin: 0 auto;
+				font-size: 0.3rem;
+				position: absolute;
+				left: 50%;
+				margin-left: -0.37rem;
+				top: 0.6rem;
+				font-weight: bold;
+				text-align: center;
+				line-height: 0.75rem;
+				color: #434a54;
+				
+			}
+			.link{
+				width: 6rem;
+				height: 0.9rem;
+				
+				margin: 0 auto;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+				
+			}
+			.link button{
+				width: 2.6rem;
+				height: 0.9rem;
+				border: none;
+				border-radius: 3px;
+				color: #fff;
+			}
+			.QQ{
+				background: #01579b;
+				float: right;
+			}
+			.Twitter{
+				background: #ff5252;
+				float: left;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header">
+			<!--关闭按钮-->
+			<img src="../img/login/close-btn.png" />
+			<!--标题-->
+			<h1>L O G I N</h1>
+		</div>
+		<!--主体-->
+		<div class="main">
+			<!--账号-->
+			<div class="ipt">
+				<input type="text" placeholder="Email or Username" class="user" />
+			</div>
+			<!--密码-->
+			<div class="ipt">
+				<input type="text" placeholder="Password" class="user" />
+			</div>
+			<!--登录按钮-->
+			<div class="btn">
+				<button>LOGIN</button>
+			</div>
+			<!--密码出问题的提示-->
+			<div class="hint">
+				<span> 忘记密码?</span>
+				<span>Register an Account</span>
+			</div>
+			<!--商标OR-->
+			<div class="or">
+				<div class="circle">
+					OR
+				</div>
+			</div>
+			<!--外链登录-->
+			<div class="link">
+				<button class="QQ">
+					qq 登录
+				</button>
+				<button class="Twitter">
+					微博登录
+				</button>
+			</div>
+			
+			
+			
+			
+		</div>
+	</body>
+
+</html>
