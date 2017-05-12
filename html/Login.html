@@ -11,7 +11,6 @@
 			document.documentElement.style.fontSize =
 				((window.innerWidth / designWidth) * rem2px) + 'px';
 		</script>
-
 		<style type="text/css">
 			* {
 				padding: 0;
@@ -62,9 +61,11 @@
 				text-align: center;
 				border-bottom: 1px solid #a8adaf;
 				color: #a8adaf;
+				font-size: 0.25rem;
 				font-weight: bold;
 				box-sizing: border-box;
 				border-radius:0 ;
+				outline:none;
 			}
 			
 			.btn {
@@ -177,7 +178,7 @@
 			</div>
 			<!--登录按钮-->
 			<div class="btn">
-				<button>LOGIN</button>
+				<button onclick="location.href='Home.html'">LOGIN</button>
 			</div>
 			<!--密码出问题的提示-->
 			<div class="hint">
@@ -193,7 +194,7 @@
 			<!--外链登录-->
 			<div class="link">
 				<button class="QQ">
-					qq 登录
+					QQ登录
 				</button>
 				<button class="Twitter">
 					微博登录
