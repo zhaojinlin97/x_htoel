@@ -1,0 +1,45 @@
+.whb(@w,@h,@b){
+    width: @w;
+    height: @h;
+    background: @b;
+}
+.re(@re:relative){
+    position: @re;
+}
+.ab(@ab:absolute){
+    position:@ab;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    .whb(100%,80px,red);
+    .header_sub{
+        .whb(100%,30px,green);
+        position: fixed;
+        top: 25px;
+        line-height: 30px;
+        h1{
+            text-align: center;
+            font-size: 25px;
+            color: #fff;
+        }
+        .menu{
+            .whb(30px,25px,none);
+            .ab;
+            top: 0;
+            left: 40px;
+            background: url(../img/home/menu.png) no-repeat center;
+            background-size:100% ;
+        }
+        .search{
+            .whb(30px,30px,none );
+            .ab;
+            top: 0;
+            right: 40px;
+            background: url(../img/home/search.png) no-repeat;
+            background-size:100%;
+        }
+    }
+}
