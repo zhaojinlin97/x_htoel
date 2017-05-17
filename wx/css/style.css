@@ -1,0 +1,180 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	background: #fff;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #d2d2d2;
+	position: fixed;
+	top: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #555;
+	font-size: 14px;
+}
+
+.header-img {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: green;
+	border: 1px solid #999;
+	overflow: hidden;
+	border-radius: 3px;
+	float: left;
+	margin-top: 7.5px;
+	
+}
+
+.header-img img {
+	width: 100%;
+	height: 100%;
+}
+
+/*.header .header_sub {
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #222;
+	font-size: 14px;
+	line-height: 45px;
+}*/
+
+.main {
+	background: ;
+	margin-top: 45px;
+	margin-bottom: 60px;
+	width: 100%;
+	height: 666px;
+	
+	
+}
+.main .news_l{
+	width: 100%;
+	min-height: 55px;
+	background: #fff;
+}
+.main .news_l .head_img{
+	width: 42px;
+	height: 42px;
+	background: blue;
+	float: left;
+	margin-top:6px;
+	margin-left: 10px;
+}
+.main .news_l .l_n{
+	width: 60%;
+	min-height: 42px;
+	background: none;
+	float: left;
+	margin-left: 12px;
+	margin-top: 6px;
+}
+.l_t{
+	width: 100%;
+	height: 15px;
+	background: #fff;
+	line-height: 10px;
+	font-size:12px;
+}
+.l_b{
+	width: 70%;
+	min-height: 27px;
+	background: none;
+	border: 1px solid #000;
+	border-radius: 3px;
+	float: left;
+	
+}
+.yytime{
+	float: left;
+	font-size: 14px;
+	margin-top: 4px;
+	color: #666;
+	margin-left: 5px;
+	
+	
+}
+
+
+.l_b1{
+	display: block;
+	width: 100%;
+	height:27px ;
+	background: url(../img/au3.png) no-repeat 10px center;
+	background-size:8% ;
+	
+}
+
+
+
+
+
+
+
+.footer {
+	width: 100%;
+	padding-bottom: 10px;
+	border-top: 1px solid #d2d2d2;
+	position: fixed;
+	bottom: 0px;
+	background: #fff;
+}
+
+.footer_1 {
+	width: 100%;
+	height: 100%;
+	padding-left: 56px;
+	padding-right: 80px;
+	box-sizing: border-box;
+}
+
+.footer .up_img {
+	width: 36px;
+	height: 36px;
+	border-radius: 3px;
+	position: absolute;
+	left: 10px;
+	bottom: 9px;
+	background: url(../img/upload.png) no-repeat;
+	background-size: 100% 100%;
+	outline: none;
+}
+
+.footer .ipt {
+	min-height: 36px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #afafaf;
+	box-sizing: border-box;
+	margin-top: 10px;
+	outline: none;
+	font-size: 15px;
+	line-height: 20px;
+	max-height: 100px;
+	overflow-y: auto;
+}
+
+.footer .up_text {
+	width: 60px;
+	height: 36px;
+	border-radius: 3px;
+	background: #44a1ef;
+	color: #fff;
+	font-size: 15px;
+	border: none;
+	position: absolute;
+	right: 10px;
+	bottom: 9px;
+	outline: none;
+}
