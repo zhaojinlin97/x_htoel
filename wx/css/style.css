@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 }
-
+/*头部*/
 .header {
 	width: 100%;
 	height: 45px;
@@ -24,19 +24,19 @@
 	display: block;
 	width: 30px;
 	height: 30px;
-	background: green;
+	/*background: green;*/
 	border: 1px solid #999;
 	overflow: hidden;
 	border-radius: 3px;
 	float: left;
 	margin-top: 7.5px;
-	
 }
 
 .header-img img {
 	width: 100%;
 	height: 100%;
 }
+
 
 /*.header .header_sub {
 	width: 100%;
@@ -48,76 +48,370 @@
 }*/
 
 .main {
-	background: ;
+	background: #f0f0f0;
 	margin-top: 45px;
-	margin-bottom: 60px;
 	width: 100%;
-	height: 666px;
-	
-	
+	overflow-y: auto;
+	box-sizing: border-box;
 }
-.main .news_l{
+
+/*左侧语音样式*/
+
+.main .news_l {
 	width: 100%;
 	min-height: 55px;
-	background: #fff;
+	/*background: red;*/
+	margin-top: 10px;
 }
-.main .news_l .head_img{
+
+.main .news_l .head_img {
 	width: 42px;
 	height: 42px;
-	background: blue;
 	float: left;
-	margin-top:6px;
+	margin-top: 6px;
 	margin-left: 10px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
 }
-.main .news_l .l_n{
+
+.head_img img {
+	vertical-align: middle;
+	max-height: 42px;
+	max=width: 42px;
+}
+
+.main .news_l .l_n {
 	width: 60%;
 	min-height: 42px;
-	background: none;
 	float: left;
 	margin-left: 12px;
 	margin-top: 6px;
 }
-.l_t{
+
+ .main .l_t {
 	width: 100%;
 	height: 15px;
-	background: #fff;
 	line-height: 10px;
-	font-size:12px;
+	font-size: 12px;
 }
-.l_b{
+
+.main .l_b {
+	min-width: 70%;
+	max-width: 80%;
+	min-height: 27px;
+	background: none;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	float: left;
+	background: #fff;
+}
+
+.yytime {
+	float: left;
+	font-size: 12px;
+	margin-top: 5px;
+	color: #666;
+	margin-left: 5px;
+}
+
+.l_b1 {
+	display: block;
+	width: 100%;
+	min-height: 27px;
+	word-break: break-all;
+	padding: 3px;
+	box-sizing: border-box;
+	font-size: 12px;
+	line-height: 14px;
+	box-sizing: border-box;
+	/*letter-spacing:0.3px;*/
+}
+
+
+
+.yybl {
+	width: 18px;
+	height: 18px;
+	float: left;
+	background: url(../img/au3.png) center no-repeat;
+	background-size: auto 100%;
+	margin-top: 2px;
+	margin-left: 5px;
+}
+
+/**********************左侧语音样式************************/
+
+
+/*聊天时间戳*/
+.time {
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	float: left;
+	/*background: red;*/
+}
+
+
+.time_n {
+	width: 100px;
+	border-radius: 5px;
+	height: 18px;
+	background: rgba(0, 0, 0, 0.3);
+	line-height: 18px;
+	font-size: 11px;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/***********************聊天时间戳***********************/
+
+
+/*右侧语音消息*/
+.main .news_r {
+	width: 100%;
+	min-height: 55px;
+	margin-top: 10px;
+	/*background: green;*/
+	float: right;
+}
+
+.main .news_r .head_img_r {
+	width: 42px;
+	height: 42px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 10px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-radius:5px ;
+	overflow: hidden;
+	border: 1px solid #d8d8d7;
+	
+}
+
+.head_img_r img {
+	vertical-align: middle;
+	max-height: 42px;
+	max=width: 42px;
+	
+}
+
+.r_n {
+	width: 60%;
+	min-height: 42px;
+	float: right;
+	margin-right: 12px;
+	margin-top: 6px;
+}
+
+.r_t {
+	width: 100%;
+	height: 15px;
+	line-height: 10px;
+	font-size: 12px;
+	float: right;
+	text-align: right;
+}
+
+.r_b {
 	width: 70%;
 	min-height: 27px;
 	background: none;
-	border: 1px solid #000;
+	border: 1px solid #eaeaea;
 	border-radius: 3px;
-	float: left;
-	
+	float: right;
+	background: #9fec54;
 }
-.yytime{
-	float: left;
-	font-size: 14px;
-	margin-top: 4px;
+
+.yytimer {
+	float: right;
+	font-size: 12px;
+	margin-top: 5px;
 	color: #666;
-	margin-left: 5px;
-	
-	
+	margin-right: 5px;
 }
 
-
-.l_b1{
+.r_b1 {
 	display: block;
 	width: 100%;
-	height:27px ;
-	background: url(../img/au3.png) no-repeat 10px center;
-	background-size:8% ;
+	min-height: 27px;
+}
+
+.yybr {
+	width: 18px;
+	height: 18px;
+	float: right;
+	background: url(../img/au33.png) center no-repeat;
+	background-size: auto 100%;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+/************************右侧语音消息***************/
+
+/*左边输入文字样式*/
+
+.news_lx {
+	width: 100%;
+	min-height: 55px;
+	margin-top: 10px;
+	float: left;
+}
+
+.main .news_lx .head_img_lx {
+	width: 42px;
+	height: 42px;
+	float: left;
+	margin-top: 6px;
+	margin-right: 10px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-radius:5px ;
+	overflow: hidden;
+	border: 1px solid #d8d8d7;
 	
+}
+
+.head_img_lx img {
+	vertical-align: middle;
+	max-height: 42px;
+	max=width: 42px;
+	
+}
+
+.l_nx {
+	width: 60%;
+	min-height: 42px;
+	float: left;
+	margin-right: 12px;
+	margin-top: 6px;
+}
+
+.l_tx {
+	width: 100%;
+	height: 15px;
+	line-height: 10px;
+	font-size: 12px;
+	float: left;
+	text-align: left;
+}
+
+.l_bx {
+	max-width: 80%;
+	min-height: 27px;
+	background: none;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	float: left;
+	background: #9fec54;
+	padding: 3px 6px 3px 3px ;
+	box-sizing: border-box;
+	word-break: break-all;
+}
+
+/*****************左边输入文字样式***************/
+
+/*发送图片的样式*/
+.big{
+	width:42px;
+	height: 42px;
+	/*background: red;*/
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 3px;
+}
+.big img{
+	width: 100%;
+	height: 100%;
+	
+}
+
+/*********************发送图片的样式**************************/
+
+
+/*右边输入文字样式*/
+.news_rx {
+	width: 100%;
+	min-height: 55px;
+	margin-top: 10px;
+	float: right;
+}
+
+.main .news_rx .head_img_rx {
+	width: 42px;
+	height: 42px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 10px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-radius:5px ;
+	overflow: hidden;
+	border: 1px solid #d8d8d7;
+	
+}
+
+.head_img_rx img {
+	vertical-align: middle;
+	max-height: 42px;
+	max=width: 42px;
+	
+}
+
+.r_nx {
+	width: 60%;
+	min-height: 42px;
+	float: right;
+	margin-right: 12px;
+	margin-top: 6px;
+}
+
+.r_tx {
+	width: 100%;
+	height: 15px;
+	line-height: 10px;
+	font-size: 12px;
+	float: right;
+	text-align: right;
+}
+
+.r_bx {
+	max-width: 80%;
+	min-height: 27px;
+	background: none;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	float: right;
+	background: #9fec54;
+	padding: 3px 6px 3px 3px ;
+	box-sizing: border-box;
+	word-break: break-all;
+}
+
+/************************右边输入文字样式***************************/
+
+
+
+
+
+/*填充输入时的框变高问题*/
+.chong{
+	width: 100%;
+	height: 0px;
+	background: red;
+	margin-bottom: 65px;
+	float: left;
 }
 
 
 
 
-
-
+/*页面的底部*/
 
 .footer {
 	width: 100%;
@@ -140,7 +434,7 @@
 	width: 36px;
 	height: 36px;
 	border-radius: 3px;
-	position: absolute;
+	position: fixed;
 	left: 10px;
 	bottom: 9px;
 	background: url(../img/upload.png) no-repeat;
@@ -173,7 +467,7 @@
 	color: #fff;
 	font-size: 15px;
 	border: none;
-	position: absolute;
+	position: fixed;
 	right: 10px;
 	bottom: 9px;
 	outline: none;
