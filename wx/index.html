@@ -16,113 +16,181 @@
 			</div>
 			&nbsp; 王兴狗 &nbsp;可能帮忙联系北上广等全国专家
 		</div>
-		
-			
+		<!--*****************************头部***************************-->
 		<!--主体-->
-		<div class="main">
-		<!--*************************主体**************************-->
-		
-		
-			<!--左侧接收的音频-->
-			<div class="news_l">
-				<div class="head_img">
-					<img src="img/doctor1.png" />
-				</div>
-				<div class="l_n">
-					<div class="l_t">
-						王兴大狗子
+		<div class="main" id="myvue">
+			<!--*************************主体**************************-->
+			<div v-for="x in c">
+				<!--左侧接收的音频-->
+
+				<div class="news_l" v-if="x.type=='leftSound'">
+					<!--聊天时间戳-->
+					<div class="time">
+						<p class="time_n">{{x.dateTime}}</p>
 					</div>
-					<div class="l_b">
-						<span class="l_b1">
+					<!--***********************聊天时间戳********************-->
+
+					<div class="head_img">
+						<img :src="x.headImage" />
+					</div>
+					<div class="l_n">
+						<div class="l_t">
+							{{x.name}}
+						</div>
+						<div class="l_b ">
+							<span class="l_b1 rplay" id="rplay">
 								<div class="yybl">
-									
 								</div>
+								<!--<audio src="mp/1.mp3"></audio>-->
 						</span>
+						</div>
+						<div class="yytime">
+							{{x.sound.duration}}
+						</div>
 					</div>
-					<div class="yytime">
-						26秒
-					</div>
+
 				</div>
-			</div>
-		<!--********************左侧接收的音频***********************-->
-		
-		
-			<!--聊天时间戳-->
-			<div class="time">
-				<p class="time_n">2017.01.20 17:20</p>
-			</div>
-			<!--*******************聊天时间戳*************************-->
-			
-		
-			<!--右侧侧接收的音频-->
-			<div class="news_r">
-				<div class="head_img_r">
-					<img src="img/1.png" />
-				</div>
-				<div class="r_n">
-					<div class="r_t">
-						王兴大狗子
+				<!--********************左侧接收的音频***********************-->
+
+				<!--右侧侧接收的音频-->
+				<div class="news_r" v-if="x.type=='rightSound'">
+					<!--聊天时间戳-->
+					<div class="time">
+						<p class="time_n">{{x.dateTime}}</p>
 					</div>
-					<div class="r_b">
-						<span class="r_b1">
+					<!--*******************聊天时间戳*************************-->
+
+					<div class="head_img_r">
+						<img :src="x.headImage" />
+					</div>
+					<div class="r_n">
+						<div class="r_t">
+							{{x.name}}
+						</div>
+						<div class="r_b">
+							<span class="r_b1 rplay">
 								<div class="yybr">
 								</div>
+								<audio src="mp/2.mp3 " id="yuyin"></audio>
 						</span>
-					</div>
-					<div class="yytimer">
-						26秒
+						</div>
+						<div class="yytimer">
+							{{x.sound.duration}}
+						</div>
 					</div>
 				</div>
-			</div>
-			<!--********************右侧接收的音频***********************-->
-			
-			
-			<!--聊天时间戳-->
-			<div class="time">
-				<p class="time_n">2017.01.20 17:20</p>
-			</div>
-			<!--*******************聊天时间戳*************************-->
-			
-			
-			<!--右侧聊天内容-->
-			<div class="news_rx">
-				<div class="head_img_rx">
-					<img src="img/1.png" />
-				</div>
-				<div class="r_nx">
-					<div class="r_tx">
-						王兴大狗子
+				<!--********************右侧接收的音频***********************-->
+
+				<!--左侧聊天内容-->
+
+				<div class="news_lx" v-if="x.type=='leftText'">
+
+					<!--聊天时间戳-->
+					<div class="time">
+						<p class="time_n">{{x.dateTime}}</p>
 					</div>
-					<div class="r_bx">
-						<span class="r_b1x">
-								aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+					<!--***********************聊天时间戳********************-->
+
+					<div class="head_img_lx">
+						<img :src="x.headImage" />
+					</div>
+					<div class="l_nx">
+						<div class="l_tx">
+							{{x.name}}
+						</div>
+						<div class="l_bx">
+							<span class="l_b1x">
+								{{x.content}}
 						</span>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!--********************右侧聊天内容********************-->
-			
-			
-			<!--聊天时间戳-->
-			<div class="time">
-				<p class="time_n">2017.01.20 17:20</p>
-			</div>
-			<!--*******************聊天时间戳*************************-->
-			
-			
-			
-			<!--右侧图图片内容-->
-			<div class="news_rx">
-				<div class="head_img_rx">
-					<img src="img/1.png" />
-				</div>
-				<div class="r_nx">
-					<div class="r_tx">
-						王兴大狗子
+				<!--*********************左侧聊天内容********************-->
+
+				<!--右侧聊天内容-->
+
+				<div class="news_rx" v-if="x.type=='rightText'">
+
+					<!--聊天时间戳-->
+					<div class="time">
+						<p class="time_n">{{x.dateTime}}</p>
 					</div>
-					<div class="r_bx">
-						<span class="r_b1x">
+					<!--*******************聊天时间戳*************************-->
+
+					<div class="head_img_rx">
+						<img :src="x.headImage" />
+					</div>
+					<div class="r_nx">
+						<div class="r_tx">
+							{{x.name}}
+						</div>
+						<div class="r_bx">
+							<span class="r_b1x">
+								{{x.content}}
+						</span>
+						</div>
+					</div>
+				</div>
+				<!--**********************右侧聊天内容********************-->
+
+				<!--左侧侧图图片内容-->
+				<div class="news_lx" v-if="x.type=='leftImage'">
+
+					<!--聊天时间戳-->
+					<div class="time">
+						<p class="time_n">{{x.dateTime}}</p>
+					</div>
+					<!--***********************聊天时间戳********************-->
+
+					<div class="head_img_lx">
+						<!--头像-->
+						<img :src="x.headImage" />
+					</div>
+					<div class="l_nx">
+						<div class="l_tx">
+							<!--用户名-->
+
+							{{x.name}}
+
+							<!--******用户名******-->
+						</div>
+						<div class="l_bx">
+							<span class="l_b1x">
 								<div class="big">
+									<!--放图片的地方-->
+									<img src="img/pic1.png"/>
+									<!--****放图片的地方******-->
+								</div>
+								<div class="big">
+									<!--放图片的地方-->
+									<img src="img/pic1.png"/>
+									<!--****放图片的地方******-->
+								</div>
+						</span>
+						</div>
+					</div>
+				</div>
+				<!--*********************左侧侧图图片内容**************-->
+
+				<!--右侧图图片内容-->
+
+				<div class="news_rx" v-if="x.type=='rightImage'">
+
+					<!--聊天时间戳-->
+					<div class="time">
+						<p class="time_n">{{x.dateTime}}</p>
+					</div>
+					<!--*******************聊天时间戳*************************-->
+					<div class="head_img_rx">
+						<img :src="x.headImage" />
+					</div>
+					<div class="r_nx">
+						<div class="r_tx">
+							{{x.name}}
+						</div>
+						<div class="r_bx">
+							<span class="r_b1x" >
+								<div class="big" >
 									<img src="img/pic1.png"/>
 								</div>
 								<div class="big">
@@ -130,110 +198,16 @@
 								</div>
 								
 						</span>
+						</div>
 					</div>
 				</div>
 			</div>
-			<!--**************右侧图图片内容**************-->
-			
-			
-			<!--聊天时间戳-->
-			<div class="time">
-				<p class="time_n">2017.01.20 17:20</p>
-			</div>
-			<!--***********************聊天时间戳********************-->
-			
-			
-			<!--左侧聊天内容-->
-			<div class="news_lx">
-				<div class="head_img_lx">
-					<img src="img/1.png" />
-				</div>
-				<div class="l_nx">
-					<div class="l_tx">
-						王兴大狗子
-					</div>
-					<div class="l_bx">
-						<span class="l_b1x">
-								12
-						</span>
-					</div>
-				</div>
-			</div>
-			<!--**************左侧聊天内容********************-->
-			
-				
-			<!--聊天时间戳-->
-			<div class="time">
-				<p class="time_n">
-					2017.01.20 17:20
-				</p>
-			</div>
-			<!--***********************聊天时间戳********************-->
-			
-			
-			<!--左侧聊天内容-->
-			<div class="news_lx">
-				<div class="head_img_lx">
-					<!--头像-->
-					<img src="img/1.png" />
-				</div>
-				<div class="l_nx">
-					<div class="l_tx">
-						<!--用户名-->
-						王兴大狗子
-					</div>
-					<div class="l_bx">
-						<span class="l_b1x">
-							<!--聊天的内容-->
-								12
-							<!--****聊天的内容*****-->
-						</span>
-					</div>
-				</div>
-			</div>
-			<!--**************左侧聊天内容********************-->
-			
-			
-			<!--左侧侧图图片内容-->
-			<div class="news_lx">
-				<div class="head_img_lx">
-					<!--头像-->
-					<img src="img/1.png" />
-				</div>
-				<div class="l_nx">
-					<div class="l_tx">
-						<!--用户名-->
-						
-						王兴大狗子
-						
-						<!--******用户名******-->
-					</div>
-					<div class="l_bx">
-						<span class="l_b1x">
-								<div class="big">
-									<!--放图片的地方-->
-									<img src="img/pic1.png"/>
-									<!--****放图片的地方******-->
-								</div>
-								<div class="big">
-									<!--放图片的地方-->
-									<img src="img/pic1.png"/>
-									<!--****放图片的地方******-->
-						</span>
-					</div>
-				</div>
-			</div>
-			<!--**************左侧侧图图片内容**************-->
+			<!--***********************右侧图图片内容**************-->
 
 		</div>
-		<!--用来填充那个输入框的-->
-		<div class="chong">
-			
-		</div>
-	</div>
+
 		<!--页面底部-->
-		
-		
+
 		<div class="footer">
 			<div class="footer_1">
 
@@ -247,6 +221,55 @@
 				<button class="up_text" onclick="alert('发你妹！')">发送</button>
 			</div>
 		</div>
+		<!--******************************页面底部*********************-->
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//声明变量
+				var yuyin = document.getElementById('yuyin');
+				var a = "communication";
+				//					datas = null;
+
+				//ajax渲染开始
+				$.ajax({
+					//方式
+					type: "get",
+					//渲染到地址
+					url: "//127.0.0.1:1001/" + a,
+					//成功后的方法
+					success: function(datas) {
+						//循环出json里的数据
+						//						$.each(datas.posts, function(a, b) {
+						var myvuee = new Vue({
+							el: '#myvue',
+							data: {
+								c: datas.posts
+							}
+						});
+						//						});
+
+					}
+				});
+
+				//	控制语音播放
+
+				$("#rplay").click(function() {
+					if(yuyin.paused) {
+
+						yuyin.play();
+
+					} else {
+
+						yuyin.load();
+					}
+				})
+				//		*****控制语音播放********
+
+			})
+		</script>
+
 	</body>
 
 </html>

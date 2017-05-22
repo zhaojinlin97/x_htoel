@@ -5,8 +5,8 @@
         "postId": "1",
         "dateTime": "2017.01.20 18:36",
         "type": "leftText",
-        "name": "王守财",
-        "headImage": "http://localhost/src/image/2.png",
+        "name": "大狗子",
+        "headImage": "./img/aa.jpg",
         "content": "请喜郎中帮我看看这个患者的疑难杂症。",
         "sound": {
           "url": "",
@@ -18,8 +18,8 @@
         "postId": "2",
         "dateTime": "2017.01.20 18:37",
         "type": "rightText",
-        "name": "喜来乐",
-        "headImage": "http://localhost/src/image/1.png",
+        "name": "赵医生",
+        "headImage": "./img/2.png",
         "content": "怎么了?",
         "sound": {
           "url": "",
@@ -31,11 +31,11 @@
         "postId": "3",
         "dateTime": "2017.01.20 18:38",
         "type": "leftSound",
-        "name": "王守财",
-        "headImage": "http://localhost/src/image/2.png",
+        "name": "二狗子",
+        "headImage": "./img/aa.jpg",
         "content": "",
         "sound": {
-          "url": "http://localhost/test/1.mp3",
+          "url": "./img/1.mp3",
           "duration": "26秒"
         },
         "imageArray": []
@@ -44,11 +44,11 @@
         "postId": "4",
         "dateTime": "2017.01.20 18:39",
         "type": "rightSound",
-        "name": "喜来乐",
-        "headImage": "http://localhost/src/image/1.png",
+        "name": "赵医生",
+        "headImage": "./img/2.png",
         "content": "",
         "sound": {
-          "url": "http://localhost/test/1.mp3",
+          "url": "./img/1.mp3",
           "duration": "26秒"
         },
         "imageArray": []
@@ -57,11 +57,11 @@
         "postId": "3",
         "dateTime": "2017.01.20 18:38",
         "type": "leftSound",
-        "name": "王守财",
-        "headImage": "http://localhost/src/image/2.png",
+        "name": "二狗子",
+        "headImage": "./img/aa.jpg",
         "content": "",
         "sound": {
-          "url": "http://localhost/test/1.mp3",
+          "url": "./img/1.mp3",
           "duration": "26秒"
         },
         "imageArray": []
@@ -70,11 +70,11 @@
         "postId": "4",
         "dateTime": "2017.01.20 18:39",
         "type": "rightSound",
-        "name": "喜来乐",
-        "headImage": "http://localhost/src/image/1.png",
+        "name": "赵医生",
+        "headImage": "./img/2.png",
         "content": "",
         "sound": {
-          "url": "http://localhost/test/1.mp3",
+          "url": "./img/1.mp3",
           "duration": "26秒"
         },
         "imageArray": []
@@ -83,11 +83,11 @@
         "postId": "3",
         "dateTime": "2017.01.20 18:38",
         "type": "leftSound",
-        "name": "王守财",
-        "headImage": "http://localhost/src/image/2.png",
+        "name": "二狗子",
+        "headImage": "./img/aa.jpg",
         "content": "",
         "sound": {
-          "url": "http://localhost/test/1.mp3",
+          "url": "./img/1.mp3",
           "duration": "26秒"
         },
         "imageArray": []
@@ -96,11 +96,11 @@
         "postId": "4",
         "dateTime": "2017.01.20 18:39",
         "type": "rightSound",
-        "name": "喜来乐",
-        "headImage": "http://localhost/src/image/1.png",
+        "name": "赵医生",
+        "headImage": "./img/2.png",
         "content": "",
         "sound": {
-          "url": "http://localhost/test/1.mp3",
+          "url": "./img/1.mp3",
           "duration": "26秒"
         },
         "imageArray": []
@@ -109,8 +109,8 @@
         "postId": "5",
         "dateTime": "2017.01.20 18:40",
         "type": "leftImage",
-        "name": "王守财",
-        "headImage": "http://localhost/src/image/2.png",
+        "name": "二狗子",
+        "headImage": "./img/aa.jpg",
         "content": "",
         "sound": {
           "url": "",
@@ -118,15 +118,15 @@
         },
         "imageArray": [
           {
-            "turl": "http://localhost/src/image/pic1.png",
-            "murl": "http://localhost/src/image/pic1.png",
-            "url": "http://localhost/src/image/pic1.png",
+            "turl": "./img/pic1.png",
+            "murl": "./img/pic1.png",
+            "url": "./img/pic1.png",
             "size": "308111"
           },
           {
-            "turl": "http://localhost/src/image/pic1.png",
-            "murl": "http://localhost/src/image/pic1.png",
-            "url": "http://localhost/src/image/pic1.png",
+            "turl": "./img/pic1.png",
+            "murl": "./img/pic1.png",
+            "url": "./img/pic1.png",
             "size": "308111"
           }
         ]
@@ -135,8 +135,8 @@
         "postId": "5",
         "dateTime": "2017.01.20 18:41",
         "type": "rightImage",
-        "name": "喜来乐",
-        "headImage": "http://localhost/src/image/1.png",
+        "name": "赵医生",
+        "headImage": "./img/2.png",
         "content": "",
         "sound": {
           "url": "",
@@ -144,15 +144,15 @@
         },
         "imageArray": [
           {
-            "turl": "http://localhost/src/image/pic1.png",
-            "murl": "http://localhost/src/image/pic1.png",
-            "url": "http://localhost/src/image/pic1.png",
+            "turl": "./img/pic1.png",
+            "murl": "./img/pic1.png",
+            "url": "./img/pic1.png",
             "size": "308111"
           },
           {
-            "turl": "http://localhost/src/image/pic1.png",
-            "murl": "http://localhost/src/image/pic1.png",
-            "url": "http://localhost/src/image/pic1.png",
+            "turl": "./img/pic1.png",
+            "murl": "./img/pic1.png",
+            "url": "./img/pic1.png",
             "size": "308111"
           }
         ]
@@ -161,11 +161,11 @@
         "postId": "4",
         "dateTime": "2017.01.20 18:39",
         "type": "rightSound",
-        "name": "喜来乐",
-        "headImage": "http://localhost/src/image/1.png",
+        "name": "赵医生",
+        "headImage": "./img/2.png",
         "content": "",
         "sound": {
-          "url": "http://localhost/test/1.mp3",
+          "url": "./mg/1.mp3",
           "duration": "26秒"
         },
         "imageArray": []
@@ -174,11 +174,11 @@
         "postId": "3",
         "dateTime": "2017.01.20 18:38",
         "type": "leftSound",
-        "name": "王守财",
-        "headImage": "http://localhost/src/image/2.png",
+        "name": "二狗子",
+        "headImage": "./img/aa.jpg",
         "content": "",
         "sound": {
-          "url": "http://localhost/test/1.mp3",
+          "url": "./img/1.mp3",
           "duration": "26秒"
         },
         "imageArray": []
@@ -187,11 +187,11 @@
         "postId": "4",
         "dateTime": "2017.01.20 18:39",
         "type": "rightSound",
-        "name": "喜来乐",
-        "headImage": "http://localhost/src/image/1.png",
+        "name": "赵医生",
+        "headImage": "./img/2.png",
         "content": "",
         "sound": {
-          "url": "http://localhost/test/1.mp3",
+          "url": "./img/1.mp3",
           "duration": "26秒"
         },
         "imageArray": []
@@ -200,8 +200,8 @@
         "postId": "5",
         "dateTime": "2017.01.20 18:40",
         "type": "leftImage",
-        "name": "王守财",
-        "headImage": "http://localhost/src/image/2.png",
+        "name": "二狗子",
+        "headImage": "./img/aa.jpg",
         "content": "",
         "sound": {
           "url": "",
@@ -209,15 +209,15 @@
         },
         "imageArray": [
           {
-            "turl": "http://localhost/src/image/pic1.png",
-            "murl": "http://localhost/src/image/pic1.png",
-            "url": "http://localhost/src/image/pic1.png",
+            "turl": "./img/pic1.png",
+            "murl": "./img/pic1.png",
+            "url": "./img/pic1.png",
             "size": "308111"
           },
           {
-            "turl": "http://localhost/src/image/pic1.png",
-            "murl": "http://localhost/src/image/pic1.png",
-            "url": "http://localhost/src/image/pic1.png",
+            "turl": "./img/pic1.png",
+            "murl": "./img/pic1.png",
+            "url": "./img/pic1.png",
             "size": "308111"
           }
         ]
@@ -226,8 +226,8 @@
         "postId": "5",
         "dateTime": "2017.01.20 18:41",
         "type": "rightImage",
-        "name": "喜来乐",
-        "headImage": "http://localhost/src/image/1.png",
+        "name": "赵医生",
+        "headImage": "./img/2.png",
         "content": "",
         "sound": {
           "url": "",
@@ -235,15 +235,15 @@
         },
         "imageArray": [
           {
-            "turl": "http://localhost/src/image/pic1.png",
-            "murl": "http://localhost/src/image/pic1.png",
-            "url": "http://localhost/src/image/pic1.png",
+            "turl": "./img/pic1.png",
+            "murl": "./img/pic1.png",
+            "url": "./img/pic1.png",
             "size": "308111"
           },
           {
-            "turl": "http://localhost/src/image/pic1.png",
-            "murl": "http://localhost/src/image/pic1.png",
-            "url": "http://localhost/src/image/pic1.png",
+            "turl": "./img/pic1.png",
+            "murl": "./img/pic1.png",
+            "url": "./img/pic1.png",
             "size": "308111"
           }
         ]

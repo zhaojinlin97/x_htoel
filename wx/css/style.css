@@ -53,6 +53,8 @@
 	width: 100%;
 	overflow-y: auto;
 	box-sizing: border-box;
+	padding-bottom: 70px;
+	box-sizing: border-box;
 }
 
 /*左侧语音样式*/
@@ -73,12 +75,15 @@
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+	border-radius: 5px;
+	border: 1px solid #999;
+	overflow: hidden;
 }
 
 .head_img img {
 	vertical-align: middle;
 	max-height: 42px;
-	max=width: 42px;
+	max-width: 42px;
 }
 
 .main .news_l .l_n {
@@ -273,6 +278,7 @@
 	border-radius:5px ;
 	overflow: hidden;
 	border: 1px solid #d8d8d7;
+	margin-left: 10px;
 	
 }
 
@@ -303,11 +309,10 @@
 .l_bx {
 	max-width: 80%;
 	min-height: 27px;
-	background: none;
 	border: 1px solid #eaeaea;
 	border-radius: 3px;
 	float: left;
-	background: #9fec54;
+	background: #fff;
 	padding: 3px 6px 3px 3px ;
 	box-sizing: border-box;
 	word-break: break-all;
